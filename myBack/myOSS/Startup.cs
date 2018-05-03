@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace myBack
+namespace myOSS
 {
     public class Startup
     {
@@ -24,14 +24,6 @@ namespace myBack
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddMvcCore().AddAuthorization().AddJsonFormatters();
-
-            services.AddAuthentication("Bearer").
-                AddIdentityServerAuthentication(options => {
-                    options.Authority = "http://localhost:5001";
-                    options.RequireHttpsMetadata = false;
-                    options.ApiName = "api1";
-                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,7 +33,7 @@ namespace myBack
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseAuthentication();
+
             app.UseMvc();
         }
     }
