@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myBack", "myBack\myBack.csproj", "{C754DECC-CA8D-4E4D-8380-56F7B3159B69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myBack", "myBack\myBack.csproj", "{C754DECC-CA8D-4E4D-8380-56F7B3159B69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myOSS", "myOSS\myOSS.csproj", "{6253B779-5B7E-46D9-B6DD-263DA1E64BE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myOSS", "myOSS\myOSS.csproj", "{6253B779-5B7E-46D9-B6DD-263DA1E64BE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerQuickStart", "IdentityServerQuickStart\IdentityServerQuickStart.csproj", "{E7E1ED2B-08BE-462D-8469-D2455DFE0D2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerQuickStart", "IdentityServerQuickStart\IdentityServerQuickStart.csproj", "{E7E1ED2B-08BE-462D-8469-D2455DFE0D2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{00B86547-5E3C-45E5-BF16-795614933DC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{00B86547-5E3C-45E5-BF16-795614933DC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCClient", "MVCClient\MVCClient.csproj", "{A2B29DFF-FFC3-4F93-93E3-3DCA0C6E085A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{00B86547-5E3C-45E5-BF16-795614933DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00B86547-5E3C-45E5-BF16-795614933DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00B86547-5E3C-45E5-BF16-795614933DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2B29DFF-FFC3-4F93-93E3-3DCA0C6E085A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2B29DFF-FFC3-4F93-93E3-3DCA0C6E085A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2B29DFF-FFC3-4F93-93E3-3DCA0C6E085A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2B29DFF-FFC3-4F93-93E3-3DCA0C6E085A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
