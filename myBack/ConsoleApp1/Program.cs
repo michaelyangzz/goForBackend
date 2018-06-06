@@ -1,6 +1,7 @@
 ﻿using IdentityModel.Client;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -11,10 +12,22 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            aa().Wait();
-
+            //aa().Wait();
+            bb();
             Console.WriteLine("Hello World!");
             Console.ReadKey();
+        }
+
+        static void bb()
+        {
+            HttpClient c = new HttpClient();
+
+            var r = c.GetAsync("https://localhost:44342/api/t/aa").Result;
+
+           
+
+        
+
         }
 
 

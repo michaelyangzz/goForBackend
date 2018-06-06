@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerQuickStart", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{00B86547-5E3C-45E5-BF16-795614933DC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCClient", "MVCClient\MVCClient.csproj", "{A2B29DFF-FFC3-4F93-93E3-3DCA0C6E085A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCClient", "MVCClient\MVCClient.csproj", "{A2B29DFF-FFC3-4F93-93E3-3DCA0C6E085A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityDemo", "IdentityDemo\IdentityDemo.csproj", "{696E9D76-DC3E-4FBF-BBF3-C73A4649CE97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A2B29DFF-FFC3-4F93-93E3-3DCA0C6E085A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2B29DFF-FFC3-4F93-93E3-3DCA0C6E085A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2B29DFF-FFC3-4F93-93E3-3DCA0C6E085A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696E9D76-DC3E-4FBF-BBF3-C73A4649CE97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696E9D76-DC3E-4FBF-BBF3-C73A4649CE97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696E9D76-DC3E-4FBF-BBF3-C73A4649CE97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696E9D76-DC3E-4FBF-BBF3-C73A4649CE97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
