@@ -22,5 +22,11 @@ namespace IdentityDemo.Controllers
         {
             return new List<string>() { "yyy", "uuu" };
         }
+
+        [HttpGet]
+        public IEnumerable<string> bb()
+        {
+            return new List<string>() { "11111", "22222" };
+        }
     }
 }

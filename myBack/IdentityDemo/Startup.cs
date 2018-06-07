@@ -88,7 +88,8 @@ namespace IdentityDemo
 
                 options.Events.OnRedirectToLogin = async (context) =>
                 {
-                    await Task.Run(() => {
+                    await Task.Run(() =>
+                    {
                         if (context.Request.Path.Value.Contains("api"))
                             context.Response.StatusCode = 401;
                         else
@@ -98,7 +99,8 @@ namespace IdentityDemo
 
                 options.Events.OnRedirectToAccessDenied = async (context) =>
                 {
-                    await Task.Run(() => {
+                    await Task.Run(() =>
+                    {
                         context.Response.StatusCode = 401;
                     });
                 };
@@ -108,12 +110,14 @@ namespace IdentityDemo
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddMvc();
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-         
+
 
             if (env.IsDevelopment())
             {
@@ -127,6 +131,8 @@ namespace IdentityDemo
             }
 
             app.UseStaticFiles();
+
+            app.UseCors(b => b.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
 
             app.UseAuthentication();
 
