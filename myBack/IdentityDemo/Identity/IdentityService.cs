@@ -24,6 +24,7 @@ namespace IdentityDemo.Identity
             services.AddIdentity<ApplicationUser, IdentityRole>(config =>
             {
                 config.SignIn.RequireConfirmedEmail = false;
+                
             }).AddErrorDescriber<IdentityLocalization>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();

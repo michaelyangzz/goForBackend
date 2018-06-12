@@ -1,18 +1,13 @@
-﻿using IdentityDemo.Data;
-using IdentityDemo.Identity;
-using IdentityDemo.Models;
+﻿using IdentityDemo.Identity;
 using IdentityDemo.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
 using System.IO;
 using System.Reflection;
-using System.Threading.Tasks;
 
 namespace IdentityDemo
 {
