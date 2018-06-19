@@ -18,11 +18,7 @@ namespace IdentityServerQuickStart
             services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
                 .AddInMemoryApiResources(Config.GetApiResources())
-                .AddInMemoryClients(Config.GetClients())
-                .AddTestUsers(Config.GetUsers());
-
-            services.AddMvc();
-
+                .AddInMemoryClients(Config.GetClients());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,8 +31,10 @@ namespace IdentityServerQuickStart
 
             app.UseIdentityServer();
 
-            app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Hello World! My IdentityServer");
+            });
         }
     }
 }
