@@ -21,12 +21,25 @@ namespace Client
 
 
             // request token
-            var tokenClient = new TokenClient(disco.TokenEndpoint, "client", "secret");
+            //var tokenClient = new TokenClient(disco.TokenEndpoint, "client", "secret");
 
-            var tokenResponse =  tokenClient.RequestClientCredentialsAsync("api1").Result;
+            //var tokenResponse =  tokenClient.RequestClientCredentialsAsync("api1").Result;
 
     
 
+
+            //if (tokenResponse.IsError)
+            //{
+            //    Console.WriteLine(tokenResponse.Error);
+            //    return;
+            //}
+
+            //Console.WriteLine(tokenResponse.Json);
+
+
+            // request token ROP
+            var tokenClient = new TokenClient(disco.TokenEndpoint, "ro.client", "secret");
+            var tokenResponse = tokenClient.RequestResourceOwnerPasswordAsync("alice", "password1", "api1").Result;
 
             if (tokenResponse.IsError)
             {
@@ -35,7 +48,7 @@ namespace Client
             }
 
             Console.WriteLine(tokenResponse.Json);
-            Console.WriteLine(tokenResponse.IdentityToken);
+            Console.WriteLine("\n\n");
 
 
             // call api
@@ -53,6 +66,9 @@ namespace Client
                 Console.WriteLine(JArray.Parse(content));
             }
 
+
+
+          
 
             Console.ReadKey();
         }
